@@ -134,8 +134,10 @@ function Field({ label, value, onChange, type = 'text', placeholder }: {
   )
 }
 
-function traduireErreur(msg: string): string {
+function traduireErreur(msg?: string): string {
+  if (!msg) return "Une erreur est survenue. Vérifie ton code d'invitation (il est peut-être déjà utilisé) ou réessaie."
   if (msg.includes('Invalid login credentials')) return 'Email ou mot de passe incorrect.'
+  if (msg.includes('Database error saving new user')) return "Code d'invitation invalide, déjà utilisé, ou ligue complète (20/20). Vérifie auprès de l'administrateur."
   if (msg.includes('complète')) return msg
   if (msg.includes('invalide')) return msg
   return msg
