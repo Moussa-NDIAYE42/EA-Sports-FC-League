@@ -1,0 +1,74 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fc26title">
+  <title id="fc26title">FC26 ELO League</title>
+  <defs>
+    <linearGradient id="shieldFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B3B26" />
+      <stop offset="55%" stop-color="#12291F" />
+      <stop offset="100%" stop-color="#0A1A12" />
+    </linearGradient>
+    <linearGradient id="goldStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD666" />
+      <stop offset="100%" stop-color="#B8860F" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#3FAE64" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#3FAE64" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Silhouette de blason -->
+  <path
+    d="M50,3 L89,14.5 L89,49 C89,74.5 70.5,91 50,99 C29.5,91 11,74.5 11,49 L11,14.5 Z"
+    fill="url(#shieldFill)"
+    stroke="url(#goldStroke)"
+    stroke-width="3"
+  />
+
+  <!-- Liseré intérieur -->
+  <path
+    d="M50,9 L83,19 L83,49 C83,71 66.5,85.5 50,92.5 C33.5,85.5 17,71 17,49 L17,19 Z"
+    fill="none"
+    stroke="#FFD666"
+    stroke-opacity="0.35"
+    stroke-width="1"
+  />
+
+  <!-- Halo central façon rond central de terrain -->
+  <circle cx="50" cy="44" r="26" fill="url(#centerGlow)" />
+  <circle cx="50" cy="44" r="16" fill="none" stroke="#4FD87F" stroke-opacity="0.4" stroke-width="1" />
+
+  <!-- Étoile de rang au sommet -->
+  <path
+    d="M50,16 L52.2,21.6 L58,22.2 L53.6,26.2 L55,32 L50,28.8 L45,32 L46.4,26.2 L42,22.2 L47.8,21.6 Z"
+    fill="#E7B426"
+  />
+
+  <!-- Numéral central -->
+  <text
+    x="50" y="54"
+    text-anchor="middle"
+    font-family="'Bebas Neue', 'Arial Narrow', sans-serif"
+    font-size="30"
+    fill="#F4F7F2"
+    letter-spacing="0.5"
+  >26</text>
+
+  <!-- Séparateur façon ligne de terrain -->
+  <line x1="30" y1="64" x2="70" y2="64" stroke="#E7B426" stroke-width="1.4" stroke-opacity="0.8" />
+  <circle cx="50" cy="64" r="2.6" fill="none" stroke="#E7B426" stroke-width="1.2" stroke-opacity="0.8" />
+
+  <!-- Mention ELO -->
+  <text
+    x="50" y="76"
+    text-anchor="middle"
+    font-family="'Inter', sans-serif"
+    font-weight="700"
+    font-size="9"
+    letter-spacing="2.5"
+    fill="#E7B426"
+  >ELO</text>
+
+  <!-- Petits rameaux latéraux façon laurier -->
+  <path d="M22,42 C25,46 25,52 21,56" fill="none" stroke="#B8860F" stroke-width="1.2" stroke-opacity="0.7" />
+  <path d="M78,42 C75,46 75,52 79,56" fill="none" stroke="#B8860F" stroke-width="1.2" stroke-opacity="0.7" />
+</svg>

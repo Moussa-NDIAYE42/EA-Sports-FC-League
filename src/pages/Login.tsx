@@ -72,6 +72,7 @@ export function Login() {
       <div className="w-full max-w-sm bg-pitch-panel border border-white/10 rounded-2xl p-6 relative shadow-card animate-scale-in">
         <div className="text-center mb-6">
           <div className="text-turf text-[11px] tracking-[3px] font-mono uppercase">FC26 · Ligue privée</div>
+          <img src="/logo-mark.svg" alt="" className="w-14 h-14 mx-auto mt-2 drop-shadow-[0_0_16px_rgba(231,180,38,0.35)]" />
           <h1 className="font-display text-5xl mt-1 bg-gradient-to-b from-ink to-turf-bright bg-clip-text text-transparent">ELO LEAGUE</h1>
           <p className="text-ink-dim text-xs mt-1">Accès réservé aux membres invités — 20 places max.</p>
         </div>

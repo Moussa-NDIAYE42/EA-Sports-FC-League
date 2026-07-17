@@ -20,9 +20,12 @@ export function Layout() {
         <div className="flex items-center justify-center gap-2 text-turf text-[11px] tracking-[3px] font-mono uppercase">
           <span className="w-5 h-px bg-white/20" /> FC26 · Match Day <span className="w-5 h-px bg-white/20" />
         </div>
-        <h1 className="font-display text-5xl tracking-wide mt-2 text-center bg-gradient-to-b from-ink to-ink-dim bg-clip-text text-transparent">
-          ELO <span className="text-turf bg-none">LEAGUE</span>
-        </h1>
+        <div className="flex items-center justify-center gap-3 mt-2">
+          <img src="/logo-mark.svg" alt="" className="w-11 h-11 drop-shadow-[0_0_12px_rgba(231,180,38,0.35)]" />
+          <h1 className="font-display text-5xl tracking-wide text-center bg-gradient-to-b from-ink to-ink-dim bg-clip-text text-transparent">
+            ELO <span className="text-turf bg-none">LEAGUE</span>
+          </h1>
+        </div>
 
         {profile && (
           <div className="mt-4 flex items-center justify-between gap-3 bg-pitch-panel border border-white/10 rounded-2xl px-3 py-2.5">
